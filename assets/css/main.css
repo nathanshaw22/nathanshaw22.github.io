@@ -235,6 +235,8 @@ input, select, textarea {
 		text-align: right;
 	}
 
+	
+
 /* Loader */
 
 	@-moz-keyframes spinner-show {
@@ -3386,6 +3388,20 @@ input, select, textarea {
 		z-index: 100;
 	}
 
+	/* Add this section at the end of main.css */
+	#logo {
+	    text-align: left; /* Center the logo */
+	    width: 100%;
+	}
+
+	#logo a {
+	    font-size: 25em; /* Adjust this size to make your name bigger */
+	    font-weight: bold; /* Make the font bold */
+	    color: #ffffff; /* Change the text color if needed */
+	    text-decoration: none; /* Remove underline from the link */
+	    display: inline-block; /* Ensures the logo is properly centered */
+	}
+
 		#header h1 {
 			height: inherit;
 			left: 1.25em;
@@ -4104,20 +4120,6 @@ input, select, textarea {
 						margin: 0;
 						padding: 0;
 					}
-/* Add this section at the end of main.css */
-#logo {
-    text-align: left; /* Center the logo */
-    width: 100%;
-}
-
-#logo a {
-    font-size: 25em; /* Adjust this size to make your name bigger */
-    font-weight: bold; /* Make the font bold */
-    color: #ffffff; /* Change the text color if needed */
-    text-decoration: none; /* Remove underline from the link */
-    display: inline-block; /* Ensures the logo is properly centered */
-}
-
 		
 	}
 
