@@ -4104,5 +4104,22 @@ input, select, textarea {
 						margin: 0;
 						padding: 0;
 					}
+/* Add this section at the end of main.css */
+#logo {
+    text-align: left; /* Center the logo */
+    width: 100%;
+}
 
+#logo a {
+    font-size: 2.5em; /* Adjust this size to make your name bigger */
+    font-weight: bold; /* Make the font bold */
+    color: #ffffff; /* Change the text color if needed */
+    text-decoration: none; /* Remove underline from the link */
+    display: inline-block; /* Ensures the logo is properly centered */
+}
+
+		
 	}
+
+
+
