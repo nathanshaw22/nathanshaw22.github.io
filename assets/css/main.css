@@ -3473,7 +3473,7 @@ input, select, textarea {
 		}
 
 		#banner:after {
-  			background-image: linear-gradient(to bottom, rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), url("images/overlay.png");
+  			background-image: linear-gradient(to bottom, rgba(23, 24, 32, 0.6), rgba(23, 24, 32, 0.6)), url("images/overlay.png");
 			content: '';
 			display: block;
 			height: 100%;
