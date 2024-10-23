@@ -3374,7 +3374,7 @@ input, select, textarea {
 	}
 
 	#header {
-		background: url('images/banner.jpg'); /* Replace with your image path */
+		background: url('/images/banner.jpg'); /* Replace with your image path */
 		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
 		cursor: default;
 		height: 3.5em;
