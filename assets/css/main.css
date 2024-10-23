@@ -3374,17 +3374,19 @@ input, select, textarea {
 	}
 
 	#header {
-		background: url('images/banner.jpg'); /* Replace with your image path */
-		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
-		cursor: default;
-		height: 3.5em;
-		left: 0;
-		line-height: 3.5em;
-		position: fixed;
-		top: 0;
-		width: 100%;
-		z-index: 100;
-	}
+    background-image: url('images/banner.jpg');
+    background-size: cover; /* Ensure the image covers the entire header */
+    background-position: center;
+    box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
+    cursor: default;
+    height: 3.5em;
+    left: 0;
+    line-height: 3.5em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
 
 		#header h1 {
 			height: inherit;
