@@ -1,4 +1,4 @@
-	@import url("fontawesome-all.min.css");
+@import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
 
 /*
@@ -3374,19 +3374,17 @@ input, select, textarea {
 	}
 
 	#header {
-    background-image: url('images/banner.jpg');
-    background-size: cover; /* Ensure the image covers the entire header */
-    background-position: center;
-    box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
-    cursor: default;
-    height: 3.5em;
-    left: 0;
-    line-height: 3.5em;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-}
+		background: rgba(39, 40, 51, 0.965);
+		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
+		cursor: default;
+		height: 3.5em;
+		left: 0;
+		line-height: 3.5em;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 100;
+	}
 
 		#header h1 {
 			height: inherit;
@@ -3444,7 +3442,7 @@ input, select, textarea {
 	}
 
 	body.landing #header {
-   		/* background: transparent; */
+		background: transparent;
 		box-shadow: none;
 		position: absolute;
 	}
@@ -3461,7 +3459,7 @@ input, select, textarea {
 		min-height: 100vh;
 		position: relative;
 		text-align: center;
-		z-index: 20;
+		z-index: 21;
 	}
 
 		#banner:before {
@@ -3473,7 +3471,7 @@ input, select, textarea {
 		}
 
 		#banner:after {
-  			background-image: linear-gradient(to bottom, rgba(23, 24, 32, 0.6), rgba(23, 24, 32, 0.6)), url("images/overlay.png");
+			background-image: linear-gradient(to bottom, rgba(23, 24, 32, 0.6), rgba(23, 24, 32, 0.6)), url("images/overlay.png");
 			content: '';
 			display: block;
 			height: 100%;
@@ -3482,7 +3480,6 @@ input, select, textarea {
 			top: 0;
 			width: 100%;
 		}
-
 
 		#banner .content {
 			display: inline-block;
