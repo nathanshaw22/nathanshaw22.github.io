@@ -3395,7 +3395,7 @@ input, select, textarea {
 	}
 
 	#logo a {
-	    font-size: 25em; /* Adjust this size to make your name bigger */
+	    font-size: 3em; /* Adjust this size to make your name bigger */
 	    font-weight: bold; /* Make the font bold */
 	    color: #ffffff; /* Change the text color if needed */
 	    text-decoration: none; /* Remove underline from the link */
