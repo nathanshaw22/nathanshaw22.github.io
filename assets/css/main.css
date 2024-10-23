@@ -3461,7 +3461,7 @@ input, select, textarea {
 		min-height: 100vh;
 		position: relative;
 		text-align: center;
-		z-index: 21;
+		z-index: 250;
 	}
 
 		#banner:before {
