@@ -2511,63 +2511,46 @@ input, select, textarea {
 
 /* Image */
 
-	.image {
-    border-radius: 0; /* Set this to 0 for rectangular images */
-    border: 0;
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
-    width: 100%; /* Make it flexible to fill the container */
-    height: auto; /* Maintain aspect ratio */
+/* Image Container */
+.image-container {
+    display: flex; /* Use flexbox to arrange images in a row */
+    justify-content: center; /* Center the images horizontally */
+    margin-top: 2em; /* Optional: add some space above the images */
 }
 
-		.image:before {
-			content: '';
-			display: block;
-			position: absolute;
-			left: 0;
-			top: 0;
-			background-image: url("images/overlay.png");
-			width: 100%;
-			height: 100%;
-			z-index: 1;
-		}
+/* Image Class */
+.image {
+    border-radius: 0; /* Set this to 0 for rectangular images */
+    border: 0;
+    display: block; /* Change to block for better control with flex */
+    position: relative;
+    overflow: hidden;
+    flex: 1; /* Allow the image to grow and fill the space equally */
+    margin: 0 1em; /* Add horizontal space between images */
+}
 
-		.image img {
+/* Image Overlay (if you want to keep it, adjust opacity or remove) */
+.image:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url("images/overlay.png");
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0; /* Set to 0 to remove the overlay effect */
+}
+
+/* Image Styles */
+.image img {
     width: 100%; /* Ensure the image fills the container */
     height: auto; /* Maintain the aspect ratio */
     object-fit: cover; /* Crop if necessary */
+    border-radius: 0; /* Make sure images are rectangular */
 }
 
-		.image.left {
-			float: left;
-			margin: 0 1.5em 1em 0;
-			top: 0.25em;
-		}
-
-		.image.right {
-			float: right;
-			margin: 0 0 1em 1.5em;
-			top: 0.25em;
-		}
-
-		.image.left, .image.right {
-			max-width: 40%;
-		}
-
-			.image.left img, .image.right img {
-				width: 100%;
-			}
-
-		.image.fit {
-			display: block;
-			margin: 0 0 2em 0;
-			width: 100%;
-		}
-
-			.image.fit img {
-				width: 100%;
-			}
 
 /* List */
 
@@ -3503,28 +3486,6 @@ body.landing #header {
 	body.is-touch #banner {
 		background-attachment: scroll;
 	}
-
-.image {
-    border-radius: 0; /* Set this to 0 for rectangular images */
-    border: 0;
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
-    width: 100%; /* Make it flexible to fill the container */
-    height: auto; /* Maintain aspect ratio */
-}
-
-.image img {
-    width: 100%; /* Ensure the image fills the container */
-    height: auto; /* Maintain the aspect ratio */
-    object-fit: cover; /* Crop if necessary */
-}
-
-.image-container .image {
-    flex: 1; /* Equal width for images */
-    margin: 0 1em; /* Space between images */
-    border-radius: 4px; /* Optional: Add slight rounded corners */
-}
 
 /* Footer */
 
