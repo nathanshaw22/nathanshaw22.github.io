@@ -3379,6 +3379,7 @@ input, select, textarea {
     font-weight: bold;
     color: #ffffff;
     text-decoration: none;
+    margin-top: 1em;
     display: inline-block;
 }
 
