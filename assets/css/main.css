@@ -3370,43 +3370,34 @@ input, select, textarea {
 	}
 
 /* Header */
-
-#page-wrapper {
-    padding-top: 3.5em;
-}
-
 #header {
     background: rgba(39, 40, 51, 0.965);
-    box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
-    cursor: default;
     height: 3.5em;
-    left: 0;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 100;
+    display: flex;
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Space between logo and nav */
 }
 
+/* Logo Styles */
 #logo {
-    text-align: center; /* Center the logo */
-    width: auto; /* Adjust width to fit content */
-    line-height: 3.5em; /* Align vertically with the header */
-    height: 3.5em;
+    margin-left: 1em; /* Adjust margin if needed */
 }
 
 #logo a {
-    font-size: 1.5em; /* Adjust this to resize the text */
+    font-size: 1.5em; /* Adjust size as needed */
     font-weight: bold;
     color: #ffffff;
     text-decoration: none;
     display: inline-block;
-    vertical-align: middle;
 }
 
+/* Navigation Styles */
 #header nav {
-    position: absolute;
-    right: 1em;
-    top: 0;
+    margin-right: 1em; /* Adjust margin if needed */
 }
 
 #header nav ul {
@@ -3418,42 +3409,17 @@ input, select, textarea {
     margin-left: 1em;
 }
 
-#header nav ul li a, #header nav ul li span {
-    border: 0;
-    color: inherit;
-    display: inline-block;
-    height: inherit;
-    line-height: inherit;
-    outline: 0;
+#header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
 }
 
-#header nav ul li a.button, #header nav ul li span.button {
-    height: 2em;
-    line-height: 2em;
-    padding: 0 1.25em;
-}
-
-#header nav ul li a:not(.button):before, #header nav ul li span:not(.button):before {
-    margin-right: 0.5em;
-}
-
-#header nav ul li.active > a, #header nav ul li.active > span {
-    color: #e44c65;
-}
-
-#header nav ul li > ul {
-    display: none;
-}
-
-body.landing #page-wrapper {
-    padding-top: 0;
-}
-
+/* Adjust for landing page */
 body.landing #header {
     background: transparent;
-    box-shadow: none;
     position: absolute;
 }
+
 
 
 /* Banner */
