@@ -3505,15 +3505,16 @@ body.landing #header {
 	}
 
 .image-container {
-    display: flex;
-    justify-content: space-around; /* Spreads images evenly */
-    align-items: center; /* Aligns them vertically */
-    padding: 2em 0; /* Adds some padding around the images */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-around; /* Space out images evenly */
+    align-items: center; /* Align vertically */
+    padding: 2em 0; /* Optional padding */
 }
 
 .image-container .image {
-    flex: 1; /* Makes all images equal width */
-    margin: 0 1em; /* Adds space between the images */
+    flex: 1; /* Equal width for images */
+    margin: 0 1em; /* Space between images */
+    border-radius: 4px; /* Optional: Add slight rounded corners */
 }
 
 .image-container .image img {
