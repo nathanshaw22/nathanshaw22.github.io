@@ -2511,17 +2511,21 @@ input, select, textarea {
 				}
 
 /* Image */
-
-/* Image Container */
 /* Image Container */
 .image-container {
-    display: flex;
+    display: flex; /* Keep the flex display for images */
     justify-content: space-between;
     align-items: center;
     width: 100%;
     padding: 0;
-    margin-top: 0; /* Add margin to create space above the images */
-    overflow: hidden; /* Ensures that the container wraps around floated children */
+    margin-top: 2em; /* Margin for spacing above the images */
+}
+
+/* Clearfix for the image container */
+.image-container::after {
+    content: ""; /* Necessary for clearfix */
+    display: table; /* This makes sure the container wraps around its children */
+    clear: both; /* Clear any floats */
 }
 
 /* Image Class */
@@ -3466,11 +3470,13 @@ body.landing #header {
 }
 
 
+
 /* Banner Text at Bottom */
 .bottom-text {
-    margin-top: 5em; /* Increase this value to move the text down further */
+    margin-top: 5em; /* Increase margin to push text down */
     text-align: center;
     color: #ffffff;
+    padding: 1em; /* Optional padding for the text */
 }
 
 .bottom-text h3 {
