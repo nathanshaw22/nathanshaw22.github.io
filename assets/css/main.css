@@ -3467,7 +3467,7 @@ body.landing #header {
 
 /* Banner Text at Bottom */
 .bottom-text {
-    margin-top: 3em; /* Increase space above the bottom text */
+    margin-top: 0; /* Increase space above the bottom text */
     text-align: center;
     color: #ffffff;
 }
