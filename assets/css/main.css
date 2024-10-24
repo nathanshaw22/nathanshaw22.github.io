@@ -3388,9 +3388,8 @@ input, select, textarea {
 }
 
 #logo a {
-    font-size: 4.5em; /* Adjust size as needed */
+    font-size: 10em !important; /* Force the font size to apply */
     font-weight: bold;
-    font-family: "Roboto", Helvetica, sans-serif;
     color: #ffffff;
     text-decoration: none;
     display: inline-block;
