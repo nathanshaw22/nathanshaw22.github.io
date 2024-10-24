@@ -3375,6 +3375,7 @@ input, select, textarea {
 
 #logo a {
     font-size: 2.5em; /* Force the font size to apply */
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     color: #ffffff;
     text-decoration: none;
@@ -3459,11 +3460,10 @@ body.landing #header {
 			}
 
 				#banner .content header h2 {
-    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
-    font-size: 2.5em;
-    color: #ffffff;
-    text-align: center;
-}
+				    font-size: 2.5em;
+ 				   color: #ffffff;
+				    text-align: center;
+				}
 
 
 				#banner .content header p {
