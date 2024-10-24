@@ -2520,7 +2520,6 @@ input, select, textarea {
     width: 100%;
     padding: 0;
     margin-top: 2em; /* Margin for spacing above the images */
-    padding-bottom: 200px;
 }
 
 /* Clearfix for the image container */
