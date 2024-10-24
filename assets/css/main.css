@@ -2514,28 +2514,24 @@ input, select, textarea {
 
 /* Image Container */
 .image-container {
-    display: flex;
-    justify-content: center; /* Align images horizontally */
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: space-between; /* Distribute space between images */
+    align-items: center; /* Center images vertically */
+    width: 100%; /* Make sure the container spans the full page width */
     margin-top: 2em;
 }
 
 /* Image Class */
 .image {
-    border-radius: 0; /* Rectangular images */
-    border: 0;
-    display: block;
-    flex: 1;
+    flex: 1; /* Allow each image to take equal space */
     margin: 0 1em; /* Space between images */
-    position: relative;
-    overflow: hidden;
 }
 
 /* Image Styles */
 .image img {
-    width: 100%; /* Full width of container */
+    width: 100%; /* Make image fill the container width */
     height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensure image covers the container */
-    border-radius: 0; /* Rectangular images */
+    object-fit: contain; /* Ensure the image is not cropped */
 }
 
 /* Optional Image Overlay */
