@@ -3469,7 +3469,7 @@ body.landing #header {
 
 /* Banner Text at Bottom */
 .bottom-text {
-    margin-top: 5em; /* Increase this value to move the text down further */
+    margin-top: 3em; /* Increase this value to move the text down further */
     text-align: center;
     color: #ffffff;
 }
@@ -3503,7 +3503,6 @@ body.landing #header {
 			#banner .content .image {
 				border-radius: 0;
 				display: inline-block;
-				height: 15em;
 				margin-left: 1em;
 				vertical-align: middle;
 				width: 25em;
