@@ -3360,6 +3360,7 @@ input, select, textarea {
     background: rgba(39, 40, 51, 0.965);
     height: 3.5em;
     position: fixed;
+    margin-top: 1em;
     top: 0;
     width: 100%;
     z-index: 100;
