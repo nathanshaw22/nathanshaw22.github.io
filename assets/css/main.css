@@ -3467,9 +3467,10 @@ body.landing #header {
 
 /* Banner Text at Bottom */
 .bottom-text {
-    margin-top: 10em; /* Increase space above the bottom text */
+    margin-top: 2em; /* Adjust this to set space above the bottom text */
     text-align: center;
     color: #ffffff;
+    clear: both; /* Ensures this element clears floated elements above */
 }
 
 .bottom-text h3 {
