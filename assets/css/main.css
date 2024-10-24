@@ -3501,6 +3501,27 @@ body.landing #header {
 		background-attachment: scroll;
 	}
 
+.image-container {
+    display: flex;
+    justify-content: space-around; /* Spreads images evenly */
+    align-items: center; /* Aligns them vertically */
+    padding: 2em 0; /* Adds some padding around the images */
+}
+
+.image-container .image {
+    flex: 1; /* Makes all images equal width */
+    margin: 0 1em; /* Adds space between the images */
+}
+
+.image-container .image img {
+    width: 100%; /* Ensures the images fill their container */
+    height: auto; /* Maintains the aspect ratio */
+    object-fit: cover; /* Crops to maintain the aspect ratio */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+
+
 /* Footer */
 
 	#footer {
