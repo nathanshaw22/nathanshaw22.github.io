@@ -2519,7 +2519,7 @@ input, select, textarea {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-top: 2em;
+    margin-top: 1em;
     padding-bottom: 2em; /* Add space below the images */
 }
 
