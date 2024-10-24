@@ -3468,11 +3468,9 @@ body.landing #header {
 
 /* Banner Text at Bottom */
 .bottom-text {
-    margin-top: 2em; /* Space above the bottom text */
+    margin-top: 5em; /* Increase this value to move the text down further */
     text-align: center;
     color: #ffffff;
-    clear: both; /* Ensures it moves below floated elements */
-    padding: 1em; /* Adds padding around the text */
 }
 
 .bottom-text h3 {
@@ -3481,6 +3479,7 @@ body.landing #header {
     font-weight: bold;
     margin: 0;
 }
+
 
 			#banner .content header {
 				display: inline-block;
