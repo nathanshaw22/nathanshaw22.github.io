@@ -2515,24 +2515,29 @@ input, select, textarea {
 /* Image Container */
 .image-container {
     display: flex; /* Flexbox for horizontal layout */
-    justify-content: space-between; /* Distribute space between images */
-    align-items: center; /* Center images vertically */
-    width: 100%; /* Make sure the container spans the full page width */
-    margin-top: 2em;
+    justify-content: space-between; /* Space between images */
+    align-items: center; /* Align images vertically */
+    width: 100%; /* Full page width */
+    padding: 0; /* Remove any padding to maximize space */
+    margin-top: 2em; /* Adjust margin as needed */
 }
 
 /* Image Class */
 .image {
-    flex: 1; /* Allow each image to take equal space */
+    flex: 1; /* Make images grow to fill space */
     margin: 0 1em; /* Space between images */
+    max-width: 30%; /* Make each image take up 30% of the width */
 }
 
 /* Image Styles */
 .image img {
-    width: 100%; /* Make image fill the container width */
+    width: 100%; /* Ensure image fills the container */
     height: auto; /* Maintain aspect ratio */
-    object-fit: contain; /* Ensure the image is not cropped */
+    object-fit: contain; /* Prevent cropping */
+    display: block;
 }
+
+
 
 /* Optional Image Overlay */
 .image:before {
