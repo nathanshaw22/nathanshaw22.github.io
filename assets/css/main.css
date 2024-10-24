@@ -3451,6 +3451,29 @@ body.landing #header {
 			z-index: 1;
 		}
 
+#banner .content {
+    padding: 6em 2em;
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+}
+
+
+/* Banner Text at Bottom */
+.bottom-text {
+    margin-top: 5em; /* Increase this value to move the text down further */
+    text-align: center;
+    color: #ffffff;
+}
+
+.bottom-text h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em; /* Adjust as needed */
+    font-weight: bold;
+    margin: 0;
+}
+
+
 			#banner .content header {
 				display: inline-block;
 				vertical-align: middle;
@@ -3472,7 +3495,7 @@ body.landing #header {
 			#banner .content .image {
 				border-radius: 0;
 				display: inline-block;
-				height: 20em;
+				height: 15em;
 				margin-left: 1em;
 				vertical-align: middle;
 				width: 25em;
