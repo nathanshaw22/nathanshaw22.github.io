@@ -3504,11 +3504,20 @@ body.landing #header {
 		background-attachment: scroll;
 	}
 
-.image-container {
-    display: flex; /* Use flexbox for alignment */
-    justify-content: space-around; /* Space out images evenly */
-    align-items: center; /* Align vertically */
-    padding: 2em 0; /* Optional padding */
+.image {
+    border-radius: 0; /* Set this to 0 for rectangular images */
+    border: 0;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    width: 100%; /* Make it flexible to fill the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.image img {
+    width: 100%; /* Ensure the image fills the container */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: cover; /* Crop if necessary */
 }
 
 .image-container .image {
@@ -3516,15 +3525,6 @@ body.landing #header {
     margin: 0 1em; /* Space between images */
     border-radius: 4px; /* Optional: Add slight rounded corners */
 }
-
-.image-container .image img {
-    width: 100%; /* Ensures the images fill their container */
-    height: auto; /* Maintains the aspect ratio */
-    object-fit: cover; /* Crops to maintain the aspect ratio */
-    border-radius: 10px; /* Optional: Adds rounded corners */
-}
-
-
 
 /* Footer */
 
