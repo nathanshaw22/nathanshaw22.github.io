@@ -2520,7 +2520,7 @@ input, select, textarea {
     align-items: center;
     width: 100%;
     margin-top: 1em;
-    padding-bottom: 2em; /* Add space below the images */
+    padding-bottom: 4em; /* Add space below the images */
 }
 
 /* Image Class */
