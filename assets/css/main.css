@@ -134,6 +134,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
+		font-family: 'Montserrat', sans-serif;
 		color: #ffffff;
 		font-weight: 300;
 		line-height: 1em;
@@ -3371,12 +3372,11 @@ input, select, textarea {
 #logo {
     margin-left: 2em; /* Adjust margin if needed */
     margin-top: 1em;
-    font-family: 'Montserrat', sans-serif;
-
 }
 
 #logo a {
     font-size: 2.5em; /* Force the font size to apply */
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     color: #ffffff;
     text-decoration: none;
@@ -3462,6 +3462,7 @@ body.landing #header {
 
 				#banner .content header h2 {
 				    font-size: 2.5em;
+				font-family: 'Montserrat', sans-serif;
  				   color: #ffffff;
 				    text-align: center;
 				}
