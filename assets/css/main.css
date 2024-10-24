@@ -3375,7 +3375,7 @@ input, select, textarea {
 }
 
 #logo a {
-    font-size: 2.5em; /* Force the font size to apply */
+    font-size: 2em; /* Force the font size to apply */
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     color: #ffffff;
