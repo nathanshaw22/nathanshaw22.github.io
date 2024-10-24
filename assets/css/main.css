@@ -2521,6 +2521,7 @@ input, select, textarea {
     width: 100%;
     padding: 0;
     margin-top: 0; /* Add margin to create space above the images */
+    overflow: hidden; /* Ensures that the container wraps around floated children */
 }
 
 /* Image Class */
