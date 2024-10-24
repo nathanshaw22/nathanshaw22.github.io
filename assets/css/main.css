@@ -2537,7 +2537,7 @@ input, select, textarea {
     height: auto; /* Maintain aspect ratio */
     object-fit: contain; /* Prevent cropping */
     display: block;
-    border: 2px solid #ffffff; /* Add a 2px solid white border */
+    border: 3px solid #6FA8DC; 
     border-radius: 5px; /* Optional: Rounded corners, adjust or remove as needed */
 }
 
