@@ -137,7 +137,7 @@ input, select, textarea {
 		color: #ffffff;
 		font-weight: 300;
 		line-height: 1em;
-		margin: 0 0 1em 0;
+		margin: 20px 0 1em 0;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -2155,39 +2155,39 @@ input, select, textarea {
 		text-align: center;
 	}
 
-	header p {
+	 p {
 		color: #ffffff;
 		position: relative;
 		margin: 0 0 1.5em 0;
 	}
 
-	header h2 + p {
+	 h2 + p {
 		font-size: 1.25em;
 		margin-top: -1em;
 		line-height: 1.75em;
 	}
 
-	header h3 + p {
+	 h3 + p {
 		font-size: 1.1em;
 		margin-top: -0.8em;
 		line-height: 1.75em;
 	}
 
-	header h4 + p,
-	header h5 + p,
-	header h6 + p {
+	 h4 + p,
+	 h5 + p,
+	 h6 + p {
 		font-size: 0.9em;
 		margin-top: -0.6em;
 		line-height: 1.5em;
 	}
 
-	header.major {
+	.major {
 		margin: 0 0 4em 0;
 		position: relative;
 		text-align: center;
 	}
 
-		header.major:after {
+		.major:after {
 			background: #e44c65;
 			content: '';
 			display: inline-block;
@@ -3355,8 +3355,8 @@ input, select, textarea {
 		margin-top: 0;
 	}
 
-/* Header */
-#header {
+/*  */
+# {
     background: rgba(39, 40, 51, 0.965);
     height: 3.5em;
     position: fixed;
