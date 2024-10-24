@@ -3459,9 +3459,12 @@ body.landing #header {
 			}
 
 				#banner .content header h2 {
-					font-size: 2.5em;
-					margin: 0;
-				}
+    font-size: 2em; /* Adjust the size to make it smaller if needed */
+    margin: 40px 0 20px; /* Add space above and below the header */
+    text-align: center; /* Center the header text */
+    color: #ffffff; /* Change text color if desired */
+}
+
 
 				#banner .content header p {
 					margin: 0.5em 0 0 0;
