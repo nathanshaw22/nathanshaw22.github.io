@@ -2531,14 +2531,15 @@ input, select, textarea {
     max-width: 30%; /* Make each image take up 30% of the width */
 }
 
-/* Image Styles */
+/* Image Styles with Border */
 .image img {
     width: 100%; /* Ensure image fills the container */
     height: auto; /* Maintain aspect ratio */
     object-fit: contain; /* Prevent cropping */
     display: block;
+    border: 2px solid #ffffff; /* Add a 2px solid white border */
+    border-radius: 5px; /* Optional: Rounded corners, adjust or remove as needed */
 }
-
 
 
 /* Optional Image Overlay */
