@@ -2513,13 +2513,14 @@ input, select, textarea {
 /* Image */
 
 /* Image Container */
+/* Image Container */
 .image-container {
-    display: flex; /* Flexbox for horizontal layout */
-    justify-content: space-between; /* Space between images */
-    align-items: center; /* Align images vertically */
-    width: 100%; /* Full page width */
-    padding: 0; /* Remove any padding to maximize space */
-    margin-top: 2em; /* Adjust margin as needed */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 2em;
+    padding-bottom: 2em; /* Add space below the images */
 }
 
 /* Image Class */
@@ -3456,16 +3457,24 @@ body.landing #header {
 			z-index: 1;
 		}
 
+#banner .content {
+    padding: 6em 2em;
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+}
+
+
 /* Banner Text at Bottom */
 .bottom-text {
-    margin-top: 2em; /* Add space between images and text */
-    text-align: center; /* Center the text */
-    color: #ffffff; /* White text */
+    margin-top: 3em; /* Increase space above the bottom text */
+    text-align: center;
+    color: #ffffff;
 }
 
 .bottom-text h3 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.2em; /* Adjust font size if needed */
+    font-size: 1.2em; /* Adjust as needed */
     font-weight: bold;
     margin: 0;
 }
