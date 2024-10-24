@@ -3388,19 +3388,19 @@ input, select, textarea {
 		z-index: 100;
 	}
 
-	/* Add this section at the end of main.css */
 	#logo {
-	    text-align: left; /* Center the logo */
-	    width: 100%;
-	}
+    text-align: center; /* Centers the logo in the page */
+    width: auto; /* Adjusts the width to fit the content */
+}
 
-	#logo a {
-	    font-size: 3em; /* Adjust this size to make your name bigger */
-	    font-weight: bold; /* Make the font bold */
-	    color: #ffffff; /* Change the text color if needed */
-	    text-decoration: none; /* Remove underline from the link */
-	    display: inline-block; /* Ensures the logo is properly centered */
-	}
+#logo a {
+    font-size: 2em; /* Smaller size for the text */
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 auto; /* Ensures it's centered without spanning full width */
+}
 
 		#header h1 {
 			height: inherit;
