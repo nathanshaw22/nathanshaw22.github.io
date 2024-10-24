@@ -2520,7 +2520,7 @@ input, select, textarea {
     width: 100%;
     padding: 0;
     margin-top: 2em; /* Margin for spacing above the images */
-    min-height: 400px; /* Set a minimum height to push the text down */
+    padding-bottom: 200px;
 }
 
 /* Clearfix for the image container */
