@@ -3459,9 +3459,12 @@ body.landing #header {
 			}
 
 				#banner .content header h2 {
-					font-size: 2.5em;
-					margin: 0;
-				}
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+    font-size: 2.5em;
+    color: #ffffff;
+    text-align: center;
+}
+
 
 				#banner .content header p {
 					margin: 0.5em 0 0 0;
