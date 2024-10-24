@@ -3372,6 +3372,7 @@ input, select, textarea {
 /* Logo Styles */
 #logo {
     margin-left: 2em; /* Adjust margin if needed */
+    margin-top: 1em;
 }
 
 #logo a {
@@ -3379,7 +3380,6 @@ input, select, textarea {
     font-weight: bold;
     color: #ffffff;
     text-decoration: none;
-    margin-top: 1em;
     display: inline-block;
 }
 
