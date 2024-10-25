@@ -160,12 +160,9 @@
             const arrow = button.querySelector('.arrow');
 
             // Toggle the content display and arrow rotation
-            if (content.classList.contains('active')) {
-                content.classList.remove('active');
-                arrow.textContent = '▼'; // Arrow facing down
-            } else {
-                content.classList.add('active');
-                arrow.textContent = '▲'; // Arrow facing up
+            if (content) {
+                content.classList.toggle('active');
+                arrow.textContent = content.classList.contains('active') ? '▲' : '▼'; // Change arrow direction
             }
         }
     </script>
