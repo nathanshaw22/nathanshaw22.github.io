@@ -1,9 +1,10 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
-    <title>Nathan Shaw</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    
+    <title>Nathan Shaw</title>
     
     <!-- Include Montserrat font from Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -11,51 +12,44 @@
     <!-- Your existing stylesheet -->
     <link rel="stylesheet" href="assets/css/main.css" />
     
-    <!-- Add the CSS to lock scrolling -->
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    
     <style>
-        html, body {
-            overflow: hidden;
-        }
-        
+        /* Basic styles to ensure header loads correctly */
         body {
-            background-image: 
-                linear-gradient(to bottom, rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), 
-                url("images/banner.jpg");
-            background-size: cover; 
-            background-attachment: fixed; 
-            overflow: auto; 
-            color: #ffffff; 
+            margin: 0; 
             font-family: 'Montserrat', sans-serif; 
-        }
-        
-        #page-wrapper {
-            padding: 2em; 
+            background: #111; /* Example background color */
+            color: #fff; /* Example text color */
         }
 
-        header {
+        #header {
             position: fixed; 
-            top: 0;
-            left: 0;
-            right: 0;
+            top: 0; 
+            left: 0; 
+            right: 0; 
             background: rgba(0, 0, 0, 0.8); 
-            z-index: 1000; 
             padding: 1em; 
+            z-index: 1000; 
         }
 
         #header h1 {
             margin: 0; 
-            color: #ffffff; 
+        }
+
+        #nav {
+            display: flex; 
         }
 
         #nav ul {
             list-style-type: none; 
-            margin: 0; 
             padding: 0; 
+            margin: 0; 
             display: flex; 
         }
 
         #nav ul li {
-            margin: 0 1em; 
+            margin-right: 1em; 
         }
 
         #nav ul li a {
@@ -67,49 +61,39 @@
             text-decoration: underline; 
         }
 
-        /* Additional styles for the dropdown */
+        /* Styles for dropdown menu */
         #nav ul li ul {
             display: none; 
             position: absolute; 
             background: rgba(0, 0, 0, 0.8); 
-            z-index: 1000; 
         }
 
         #nav ul li:hover ul {
             display: block; 
         }
-
-        #nav ul li ul li {
-            margin: 0; 
-        }
     </style>
-    
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 
 <body class="is-preload landing">
-    <div id="page-wrapper">
-
-        <!-- Header -->
-        <header id="header">
-            <h1 id="logo"><a href="index.html">NATHAN C SHAW</a></h1>
-            <nav id="nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="research.html">Research</a></li>
-                    <li><a href="outreach.html">Outreach</a></li>
-                    <li><a href="elements.html">CV</a></li>
-                    <li>
-                        <a href="#">Portfolio</a>
-                        <ul>
-                            <li><a href="left-sidebar.html">Messier Marathon</a></li>
-                            <li><a href="right-sidebar.html">Music Arrangements</a></li>
-                            <li><a href="no-sidebar.html">Test</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+    <header id="header">
+        <h1 id="logo"><a href="index.html">NATHAN C SHAW</a></h1>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="outreach.html">Outreach</a></li>
+                <li><a href="elements.html">CV</a></li>
+                <li>
+                    <a href="#">Portfolio</a>
+                    <ul>
+                        <li><a href="left-sidebar.html">Messier Marathon</a></li>
+                        <li><a href="right-sidebar.html">Music Arrangements</a></li>
+                        <li><a href="no-sidebar.html">Test</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
         <!-- Research Projects Section -->
         <section id="projects" style="margin-top: 5em;">
