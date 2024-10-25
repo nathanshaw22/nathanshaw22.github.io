@@ -76,7 +76,31 @@
 
         a:hover {
             text-decoration: underline; /* Optional: add underline on hover */
-        
+
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.contento {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+    
         
     </style>
 
@@ -123,6 +147,16 @@
         <span style="font-weight: bold;">Summer Report:</span><br>
         <a href="https://www.nrao.edu/students/2024/Reports/ShawNathan.pdf" target="_blank">https://www.nrao.edu/students/2024/Reports/ShawNathan.pdf</a>
     </p>
+
+
+                
+                <button type="button" class="collapsible">Open Collapsible</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+
+                
             </div>
 
             <div class="project">
