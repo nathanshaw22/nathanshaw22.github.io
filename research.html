@@ -14,12 +14,16 @@
     <!-- Add custom styles -->
     <style>
         body {
-            background: url('images/banner.jpg') no-repeat center center fixed; /* Background image */
-            background-size: cover; /* Cover the entire viewport */
-            overflow: auto; /* Enable scrolling */
-            color: #ffffff; /* Default text color */
-            font-family: 'Montserrat', sans-serif; /* Set default font */
-        }
+        /* Combined background: gradient over an image */
+        background-image: 
+            linear-gradient(to bottom, rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), 
+            url("images/banner.jpg");
+        background-size: cover; /* Ensure the image covers the entire viewport */
+        background-attachment: fixed; /* Keep the background fixed */
+        overflow: auto; /* Enable scrolling */
+        color: #ffffff; /* Default text color */
+        font-family: 'Montserrat', sans-serif; /* Set default font */
+    }
         
         #page-wrapper {
             padding: 2em; /* Add padding for page content */
