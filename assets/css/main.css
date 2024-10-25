@@ -2520,6 +2520,7 @@ input, select, textarea {
     align-items: center;
     width: 100%;
     padding: 0;
+    outline: none; /* Remove any outline */
     margin-top: 0; /* Add margin to create space above the images */
     overflow: hidden; /* Ensures that the container wraps around floated children */
 }
