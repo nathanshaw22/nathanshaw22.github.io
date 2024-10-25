@@ -1,10 +1,9 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html>
 <head>
+    <title>Nathan Shaw</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    
-    <title>Nathan Shaw</title>
     
     <!-- Include Montserrat font from Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -12,88 +11,84 @@
     <!-- Your existing stylesheet -->
     <link rel="stylesheet" href="assets/css/main.css" />
     
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    
+    <!-- Add the CSS for the collapsible buttons -->
     <style>
-        /* Basic styles to ensure header loads correctly */
         body {
-            margin: 0; 
+            background-image: 
+                linear-gradient(to bottom, rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), 
+                url("images/banner.jpg");
+            background-size: cover; 
+            background-attachment: fixed; 
+            overflow: auto; 
+            color: #ffffff; 
             font-family: 'Montserrat', sans-serif; 
-            background: #111; /* Example background color */
-            color: #fff; /* Example text color */
         }
 
-        #header {
-            position: fixed; 
-            top: 0; 
-            left: 0; 
-            right: 0; 
-            background: rgba(0, 0, 0, 0.8); 
-            padding: 1em; 
-            z-index: 1000; 
+        .collapsible {
+            background-color: #777;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
 
-        #header h1 {
-            margin: 0; 
+        .collapsible .arrow {
+            font-weight: bold;
+            margin-left: auto; /* Aligns arrow to the right */
         }
 
-        #nav {
-            display: flex; 
+        .active, .collapsible:hover {
+            background-color: #555;
         }
 
-        #nav ul {
-            list-style-type: none; 
-            padding: 0; 
-            margin: 0; 
-            display: flex; 
+        .contento {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: rgba(255, 255, 255, 0.0); /* Transparent background */
         }
 
-        #nav ul li {
-            margin-right: 1em; 
-        }
-
-        #nav ul li a {
-            color: #ffa69e; 
-            text-decoration: none; 
-        }
-
-        #nav ul li a:hover {
-            text-decoration: underline; 
-        }
-
-        /* Styles for dropdown menu */
-        #nav ul li ul {
-            display: none; 
-            position: absolute; 
-            background: rgba(0, 0, 0, 0.8); 
-        }
-
-        #nav ul li:hover ul {
-            display: block; 
+        .contento img {
+            width: 100%; 
+            height: auto;
+            margin-bottom: 1em;
         }
     </style>
+    
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 
 <body class="is-preload landing">
-    <header id="header">
-        <h1 id="logo"><a href="index.html">NATHAN C SHAW</a></h1>
-        <nav id="nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="outreach.html">Outreach</a></li>
-                <li><a href="elements.html">CV</a></li>
-                <li>
-                    <a href="#">Portfolio</a>
-                    <ul>
-                        <li><a href="left-sidebar.html">Messier Marathon</a></li>
-                        <li><a href="right-sidebar.html">Music Arrangements</a></li>
-                        <li><a href="no-sidebar.html">Test</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1 id="logo"><a href="index.html">NATHAN C SHAW</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="outreach.html">Outreach</a></li>
+                    <li><a href="elements.html">CV</a></li>
+                    <li>
+                        <a href="#">Portfolio</a>
+                        <ul>
+                            <li><a href="left-sidebar.html">Messier Marathon</a></li>
+                            <li><a href="right-sidebar.html">Music Arrangements</a></li>
+                            <li><a href="no-sidebar.html">Test</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
 
         <!-- Research Projects Section -->
         <section id="projects" style="margin-top: 5em;">
