@@ -1,18 +1,22 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Research</title>
+    <title>Nathan Shaw</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-
+    
     <!-- Include Montserrat font from Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     
     <!-- Your existing stylesheet -->
     <link rel="stylesheet" href="assets/css/main.css" />
     
-    <!-- Add custom styles -->
+    <!-- Add the CSS to lock scrolling -->
     <style>
+        html, body {
+            overflow: hidden;
+        }
+        
         body {
             background-image: 
                 linear-gradient(to bottom, rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), 
@@ -28,59 +32,64 @@
             padding: 2em; 
         }
 
-       
-        .collapsible {
-            background-color: #777;
-            color: white;
-            cursor: pointer;
-            padding: 18px;
-            width: 100%;
-            border: none;
-            text-align: left;
-            outline: none;
-            font-size: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
+        header {
+            position: fixed; 
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.8); 
+            z-index: 1000; 
+            padding: 1em; 
         }
 
-        .collapsible .arrow {
-            font-weight: bold;
-            margin-right: 10px; /* Positions arrow to the left of 'Abstract' */
+        #header h1 {
+            margin: 0; 
+            color: #ffffff; 
         }
 
-        .active, .collapsible:hover {
-            background-color: #555;
+        #nav ul {
+            list-style-type: none; 
+            margin: 0; 
+            padding: 0; 
+            display: flex; 
         }
 
-        .contento {
-            padding: 0 18px;
-            display: none;
-            overflow: hidden;
-            background-color: transparent; /* Makes background invisible */
+        #nav ul li {
+            margin: 0 1em; 
         }
 
-        .contento img {
-            width: 100%; 
-            height: auto;
-            margin-bottom: 1em;
-        }
-
-        a {
+        #nav ul li a {
             color: #ffa69e; 
             text-decoration: none; 
         }
 
-        a:hover {
+        #nav ul li a:hover {
             text-decoration: underline; 
         }
-    </style>
 
+        /* Additional styles for the dropdown */
+        #nav ul li ul {
+            display: none; 
+            position: absolute; 
+            background: rgba(0, 0, 0, 0.8); 
+            z-index: 1000; 
+        }
+
+        #nav ul li:hover ul {
+            display: block; 
+        }
+
+        #nav ul li ul li {
+            margin: 0; 
+        }
+    </style>
+    
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 
-<body>
+<body class="is-preload landing">
     <div id="page-wrapper">
+
         <!-- Header -->
         <header id="header">
             <h1 id="logo"><a href="index.html">NATHAN C SHAW</a></h1>
@@ -101,7 +110,7 @@
                 </ul>
             </nav>
         </header>
-        
+
         <!-- Research Projects Section -->
         <section id="projects" style="margin-top: 5em;">
             <div class="project">
