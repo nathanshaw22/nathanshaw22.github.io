@@ -5,167 +5,43 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
-    <!-- Include Montserrat font from Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    
-    <!-- Your existing stylesheet -->
-    <link rel="stylesheet" href="assets/css/main.css" />
-    
     <style>
         body {
-            background-image: 
-                linear-gradient(to bottom, rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), 
-                url("images/banner.jpg");
-            background-size: cover;
-            background-attachment: fixed;
-            overflow: auto;
-            color: #ffffff;
-            font-family: 'Montserrat', sans-serif;
+            color: #000000;
+            font-family: Arial, sans-serif;
         }
-
-        #page-wrapper {
-            padding: 2em;
-        }
-
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            background: rgba(0, 0, 0, 0.8);
-            z-index: 1000;
-            padding: 1em;
-        }
-
-        #header h1 {
-            margin: 0;
-            color: #ffffff;
-        }
-
         .project {
-            margin: 2em 0;
-            padding: 1em;
-            background-color: rgba(255, 255, 255, 0.2);
-            border-radius: 5px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
         }
-
-        .project h2 {
-            font-weight: bold;
-            color: #ffffff;
-        }
-
-        /* Dropdown styles */
-        .dropdown {
-            margin-top: 1em;
-        }
-
-        .dropdown-button {
-            background: none;
-            border: none;
-            font-size: 1.2em;
-            color: #ba181b;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-        }
-
-        .arrow {
-            margin-left: 0.5em;
-            transition: transform 0.3s;
-        }
-
         .content {
             display: none;
-            margin-top: 0.5em;
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 1em;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .content.active {
-            display: block;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #aaa;
         }
     </style>
-
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 
-<body class="is-preload landing">
-    <div id="page-wrapper">
-
-        <!-- Header -->
-        <header id="header">
-            <h1 id="logo"><a href="index.html">NATHAN C SHAW</a></h1>
-            <nav id="nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="research.html">Research</a></li>
-                    <li><a href="outreach.html">Outreach</a></li>
-                    <li><a href="elements.html">CV</a></li>
-                    <li>
-                        <a href="#">Portfolio</a>
-                        <ul>
-                            <li><a href="left-sidebar.html">Messier Marathon</a></li>
-                            <li><a href="right-sidebar.html">Music Arrangements</a></li>
-                            <li><a href="no-sidebar.html">Test</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-
-        <!-- Research Projects Section -->
-        <section id="projects" style="margin-top: 4em;">
-            <div class="project">
-                <h2>The Quest For 3%: Strategies to Improve H<sub>0</sub> Precision with the Megamaser Cosmology Project</h2>
-                <div class="dropdown">
-                    <button class="dropdown-button" onclick="toggleDropdown(this)">
-                        <span style="font-weight: bold;">Details:</span>
-                        <span class="arrow">▼</span>
-                    </button>
-                    <div class="content">
-                        <h3>Location: National Radio Astronomy Observatory (Charlottesville, VA)</h3>
-                        <p>
-                            <span style="font-weight: bold;">Abstract:</span> The Megamaser Cosmology Project (MCP) aims to measure the Hubble Constant (H0) with high precision using water megamasers in the disks of nearby active galaxies. The current measurement of H0 using this method is 73.9 ± 3.0 km s<sup>-1</sup> Mpc<sup>-1</sup>, corresponding to an uncertainty of 4.06%. This study explores whether achieving that level of precision is feasible by using existing observational facilities...
-                        </p>
-                        <div>
-                            <span style="font-weight: bold;">Summer Report:</span>
-                            <button class="dropdown-button" onclick="toggleDropdown(this)">
-                                <span>View Summer Report</span>
-                                <span class="arrow">▼</span>
-                            </button>
-                            <div class="content">
-                                <p>
-                                    <a href="https://www.nrao.edu/students/2024/Reports/ShawNathan.pdf" target="_blank">Download Summer Report</a>
-                                </p>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="images/pic01.jpg" alt="Project 1 Image 1" />
-                            <img src="images/pic02.jpg" alt="Project 1 Image 2" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Add more projects as needed -->
-        </section>
+<body>
+    <div class="project">
+        <h2>The Quest For 3%</h2>
+        <button onclick="document.querySelector('.content').style.display = 'block'">Show Details</button>
+        <div class="content">
+            <h3>Location: National Radio Astronomy Observatory</h3>
+            <p>Details about the project...</p>
+            <img src="images/pic02.jpg" alt="Project 1 Image 1" />
+        </div>
     </div>
 
     <script>
-        function toggleDropdown(button) {
-            const content = button.nextElementSibling;
-            const arrow = button.querySelector('.arrow');
-
-            // Toggle the content display and arrow rotation
-            if (content) {
-                content.classList.toggle('active');
-                arrow.textContent = content.classList.contains('active') ? '▲' : '▼'; // Change arrow direction
-            }
-        }
+        // Simple toggle
+        const button = document.querySelector('button');
+        button.addEventListener('click', function() {
+            const content = document.querySelector('.content');
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        });
     </script>
-
 </body>
 </html>
