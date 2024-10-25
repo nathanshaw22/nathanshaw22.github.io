@@ -11,10 +11,39 @@
     <!-- Your existing stylesheet -->
     <link rel="stylesheet" href="assets/css/main.css" />
     
-    <!-- Add the CSS to lock scrolling -->
+    <!-- Add the CSS to lock scrolling and style collapsible sections -->
     <style>
         html, body {
             overflow: hidden;
+        }
+
+        .contento {
+            display: none; /* Hide the content initially */
+            padding: 15px;
+            border: 1px solid #ccc; /* Optional: add a border for better visibility */
+            margin-top: 5px; /* Add some space above the content */
+            background-color: #f9f9f9; /* Optional: light background color for the content */
+        }
+
+        .collapsible {
+            background-color: #eee; /* Optional: background for the button */
+            color: black; /* Text color */
+            cursor: pointer; /* Pointer cursor on hover */
+            padding: 10px; /* Padding for the button */
+            width: 100%; /* Full-width button */
+            border: none; /* No border */
+            text-align: left; /* Align text to the left */
+            outline: none; /* No outline */
+            font-size: 15px; /* Font size for the button */
+            transition: background-color 0.3s; /* Transition for hover effect */
+        }
+
+        .collapsible:hover {
+            background-color: #ccc; /* Change background on hover */
+        }
+
+        .collapsible.active {
+            background-color: #ddd; /* Change background when active */
         }
     </style>
     
