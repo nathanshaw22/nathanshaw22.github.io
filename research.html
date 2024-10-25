@@ -13,71 +13,56 @@
     
     <!-- Add custom styles -->
     <style>
-        /* Ensure the body has a full page background image */
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            background: url('images/banner.jpg') no-repeat center center fixed; /* Background image */
-            background-size: cover; /* Ensure it covers the whole page */
-            font-family: 'Montserrat', sans-serif; /* Font */
-            color: white;
+        body {
+            background-image: 
+                linear-gradient(to bottom, rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), 
+                url("images/banner.jpg");
+            background-size: cover; 
+            background-attachment: fixed; 
+            overflow: auto; 
+            color: #ffffff; 
+            font-family: 'Montserrat', sans-serif; 
         }
-
-        /* Page wrapper to contain all content */
+        
         #page-wrapper {
-            padding: 2em;
+            padding: 2em; 
         }
 
-        /* Fixed header styling */
         header {
-            position: fixed;
+            position: fixed; 
             top: 0;
             left: 0;
             right: 0;
-            background: rgba(0, 0, 0, 0.8); /* Semi-transparent header */
-            z-index: 1000;
-            padding: 1em;
+            background: rgba(0, 0, 0, 0.8); 
+            z-index: 1000; 
+            padding: 1em; 
         }
 
-        /* Header title */
         #header h1 {
-            margin: 0;
-            color: white;
+            margin: 0; 
+            color: #ffffff; 
         }
 
-        /* General project card styles */
         .project {
-            margin: 2em 0;
-            padding: 1.5em;
-            background-color: rgba(255, 255, 255, 0.2); /* Slightly transparent */
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            margin: 2em 0; 
+            padding: 1em; 
+            background-color: rgba(255, 255, 255, 0.2); 
+            border-radius: 5px; 
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); 
         }
 
-        /* Project titles */
         .project h2 {
             font-weight: bold;
-            color: #ffffff;
+            color: #ffffff; 
         }
 
-        /* Project subtitle (location, etc.) */
         .project h3 {
             font-weight: 400;
-            color: #ffffff;
-            margin-bottom: 0.5em;
+            color: #ffffff; 
         }
 
-        /* Project images */
-        .project img {
-            width: 100%;
-            height: auto;
-            margin-bottom: 1em;
-        }
-
-        /* Collapsible button styles */
         .collapsible {
-            background-color: rgba(255, 255, 255, 0.1); /* Matching project style */
+            background-color: rgba(255, 255, 255, 0.1); 
             color: white;
             cursor: pointer;
             padding: 1em;
@@ -87,31 +72,35 @@
             outline: none;
             font-size: 18px;
             border-radius: 5px;
+            margin-bottom: 0.5em;
         }
 
-        /* Active/hover states */
         .collapsible:hover {
             background-color: rgba(255, 255, 255, 0.3);
         }
 
-        /* Collapsible content hidden by default */
         .contento {
             padding: 1em;
             display: none;
             overflow: hidden;
             background-color: rgba(241, 241, 241, 0.9);
-            color: #000; /* Black text for the content */
+            color: #000;
             border-radius: 5px;
         }
 
-        /* Link color */
+        .contento img {
+            width: 100%; 
+            height: auto;
+            margin-bottom: 1em;
+        }
+
         a {
-            color: #ba181b;
-            text-decoration: none;
+            color: #ffa69e; 
+            text-decoration: none; 
         }
 
         a:hover {
-            text-decoration: underline;
+            text-decoration: underline; 
         }
     </style>
 
@@ -151,11 +140,9 @@
                     <p>
                         The Megamaser Cosmology Project (MCP) aims to measure the Hubble Constant (H0) with high precision using water megamasers. The current measurement stands at 73.9 ± 3.0 km s<sup>-1</sup> Mpc<sup>-1</sup>, with an uncertainty of 4.06%. The goal is to reduce the uncertainty to 3%. This project investigates approaches such as refining disk-fitting models and re-observing certain galaxies to improve precision. By re-observing galaxies like NGC 5765b, uncertainty was reduced to 3.24%, demonstrating that the MCP is on course to achieve 3% precision.
                     </p>
-                    <p>
-                        <a href="https://www.nrao.edu/students/2024/Reports/ShawNathan.pdf" target="_blank">Summer Report</a>
-                    </p>
+                    <img src="images/H0_graph.png" alt="H0 Graph" />
+                    <p><a href="https://www.nrao.edu/students/2024/Reports/ShawNathan.pdf" target="_blank">Summer Report</a></p>
                 </div>
-                <img src="images/H0_graph.png" alt="H0 Graph" />
             </div>
 
             <div class="project">
@@ -166,11 +153,9 @@
                     <p>
                         This research project involved studying the evolution of the stellar mass function (SMF) over cosmic time. Using observational data from surveys, we aimed to quantify how the distribution of stellar masses in galaxies has changed from early cosmic epochs to the present day. By fitting the observed SMF data with theoretical models, we derived key insights into galaxy formation and evolution. The project explored how star formation, mergers, and other processes have influenced the mass distribution in galaxies.
                     </p>
-                    <p>
-                        <a href="https://www.trumanresearch.edu/2024/Reports/ShawNathan.pdf" target="_blank">Final Report</a>
-                    </p>
+                    <img src="images/H0_graph.png" alt="Stellar Mass Function Graph" />
+                    <p><a href="https://www.trumanresearch.edu/2024/Reports/ShawNathan.pdf" target="_blank">Final Report</a></p>
                 </div>
-                <img src="images/H0_graph.png" alt="Stellar Mass Function Graph" />
             </div>
         </section>
     </div>
