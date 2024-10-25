@@ -62,31 +62,35 @@
         }
 
         .collapsible {
-            background-color: rgba(255, 255, 255, 0.1); 
-            color: white;
-            cursor: pointer;
-            padding: 1em;
-            width: 100%;
-            border: none;
-            text-align: left;
-            outline: none;
-            font-size: 18px;
-            border-radius: 5px;
-            margin-bottom: 0.5em;
-        }
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-        .collapsible:hover {
-            background-color: rgba(255, 255, 255, 0.3);
-        }
+.collapsible .arrow {
+    font-weight: bold;
+    margin-left: auto; /* Aligns arrow to the right */
+}
 
-        .contento {
+.active, .collapsible:hover {
+    background-color: #555;
+}
+
+.contento {
     padding: 0 18px;
     display: none;
     overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
-    border-radius: 5px; /* Optional: rounded corners */
+    background-color: rgba(255, 255, 255, 0.0); /* Adjust transparency here */
 }
-
 
         .contento img {
             width: 100%; 
@@ -135,7 +139,9 @@
             <div class="project">
                 <h2>The Quest For 3%: Strategies to Improve H<sub>0</sub> Precision with the Megamaser Cosmology Project</h2>
                 <h3>National Radio Astronomy Observatory REU (Charlottesville, VA)</h3>
-                <button type="button" class="collapsible"><strong>Abstract:</strong></button>
+<button type="button" class="collapsible">
+    <strong>Abstract</strong> <span class="arrow">▼</span>
+</button>
                 <div class="contento">
                     <p>
                     The Megamaser Cosmology Project (MCP) aims to measure the Hubble Constant (H0) with high precision using water megamasers in the disks of nearby active galaxies. While the current measurement of H0 using this method is 73.9 ± 3.0 km s<sup>-1</sup> Mpc<sup>-1</sup>, corresponding to an uncertainty of 4.06%, the MCP’s stated goal is an overall uncertainty of 3%. This study explores whether achieving that level of precision is feasible by using existing observational facilities. We investigate three approaches, each of which incorporates results alongside the original six galaxies used in the analysis by Pesce et al. (2020a). These approaches included: (1) refining the thin, warped disk fitting model for Markarian 1419, (2) independently adding a new galaxy for which we have data—IC 2560, ESO 558-G009, and J0437+2456, and (3) reobserving a galaxy used in the original analysis, specifically NGC 6323 and NGC 6264 for their high initial uncertainties, and NGC 5765b due to its exceptional precision. We found that the refined model for Markarian 1419 reduced the uncertainty to 3.99%, though a reduced χ<sup>2</sup> ≫ 1 indicates a poor model fit, and further analysis is needed. The only meaningful reduction resulted from revisiting the galaxies used in Pesce et al. (2020a). Reobserving NGC 6323 to a 10% uncertainty in distance achieved a reduction in overall uncertainty to 3.57%, while including a new observation of NGC 5765b to the same precision as the original measurement led to the most substantial decrease, down to 3.24%. We project that combining these strategies—a new observation of NGC 5765b and achieving a 10% distance uncertainty for NGC 6323—could constrain H0 to 73.05<sup>+2.25</sup><sub>−2.20</sub> km s<sup>-1</sup> Mpc<sup>-1</sup>, resulting in an overall uncertainty of 3.05%. This analysis demonstrates that the MCP is on course to meet its target of 3% precision, paving the way for future advancements with the next-generation Very Large Array (ngVLA) and the pursuit of a 1% measurement.                    </p>
@@ -161,19 +167,24 @@
 
     <!-- Scripts for dropdown functionality -->
     <script>
-        // Dropdown functionality for collapsible content
-        var coll = document.getElementsByClassName("collapsible");
-        for (var i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
+    document.addEventListener("DOMContentLoaded", function () {
+        const coll = document.querySelectorAll(".collapsible");
+
+        coll.forEach(button => {
+            button.addEventListener("click", function () {
                 this.classList.toggle("active");
-                var content = this.nextElementSibling;
+                
+                const content = this.nextElementSibling;
                 if (content.style.display === "block") {
                     content.style.display = "none";
+                    this.querySelector(".arrow").textContent = "▼"; // Change to down arrow
                 } else {
                     content.style.display = "block";
+                    this.querySelector(".arrow").textContent = "▲"; // Change to up arrow
                 }
             });
-        }
-    </script>
+        });
+    });
+</script>
 </body>
 </html>
