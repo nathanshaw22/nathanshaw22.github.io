@@ -73,28 +73,34 @@
 
         /* Collapsible styles */
         .collapsible {
-            background-color: #777;
-            color: white;
-            cursor: pointer;
-            padding: 18px;
-            width: 100%;
-            border: none;
-            text-align: left;
-            outline: none;
-            font-size: 15px;
-            margin-top: 10px; /* Space above collapsible */
-        }
+  background-color: #333; /* Matches h2 style */
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  font-size: 1.5em; /* Similar to h2 size */
+  font-weight: bold; /* To match h2 boldness */
+  outline: none;
+  margin-top: 10px; /* Spacing above */
+  margin-bottom: 5px; /* Spacing below */
+  border-radius: 5px; /* Rounded corners */
+}
 
-        .active, .collapsible:hover {
-            background-color: #555;
-        }
+.active, .collapsible:hover {
+  background-color: #444; /* Slightly darker on hover */
+}
 
-        .contento {
-            padding: 0 18px;
-            display: none; /* Keep it hidden by default */
-            overflow: hidden;
-            background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background for content */
-        }
+.contento {
+  padding: 10px 15px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1; /* Light background to contrast with button */
+  border-radius: 5px; /* Match rounded corners */
+  margin-top: 5px; /* Space between button and content */
+}
+
     </style>
 
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -126,7 +132,7 @@
             <div class="project">
     <h2>The Quest For 3%: Strategies to Improve H<sub>0</sub> Precision with the Megamaser Cosmology Project</h2>
     
-    <!-- Collapsible Button (Attached to Location) -->
+    <!-- Styled Collapsible Button (Location) -->
     <button type="button" class="collapsible">National Radio Astronomy Observatory REU (Charlottesville, VA)</button>
     
     <!-- Collapsible Content (Abstract) -->
@@ -140,6 +146,7 @@
         </p>
     </div>
 </div>
+
         </section>
     </div>
 
