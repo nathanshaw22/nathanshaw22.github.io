@@ -2515,7 +2515,6 @@ input, select, textarea {
 /* Image Container */
 /* Image Container */
 .image-container {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
