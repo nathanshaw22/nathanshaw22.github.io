@@ -154,7 +154,15 @@
 <div class="contento">
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
+    <script>
+        const collapsible = document.querySelector('.collapsible');
+        const content = document.querySelector('.contento');
 
+        collapsible.addEventListener('click', function() {
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            collapsible.classList.toggle('active'); // Optionally toggle the active class for styling
+        });
+    </script>
                 
             </div>
 
