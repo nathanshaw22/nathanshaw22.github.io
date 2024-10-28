@@ -24,7 +24,7 @@
             background-image: url('images/banner.jpg'); /* Path to banner background image */
             background-size: cover;
             background-position: center;
-            font-family: Arial, sans-serif;
+            font-family: 'Montserrat', sans-serif; /* Use Montserrat for consistency */
             color: #ffffff;
             display: flex;
             flex-direction: column;
@@ -77,21 +77,13 @@
                 </ul>
             </nav>
         </header>
-
-        <!-- Main Container with Embedded PDF -->
-        <div class="container">            
-            <embed src="Shaw_CV.pdf" type="application/pdf" title="Embedded PDF Viewer" />
+        
+        <!-- Main Content -->
+        <div class="container">
+            <!-- PDF Viewer or Content goes here -->
+            <embed src="Shaw_CV.pdf" type="application/pdf" />
         </div>
-    </div>
 
-    <!-- JavaScript -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/jquery.dropotron.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    </div>
 </body>
 </html>
