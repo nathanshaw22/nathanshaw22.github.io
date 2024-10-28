@@ -13,43 +13,122 @@
     
     <!-- Inline CSS for background and layout -->
     <style>
-        /* Lock scrolling */
-        html, body {
-            overflow: hidden;
-            margin: 0;
-        }
-
-        /* Background and Layout */
         body {
-            background-image: url('images/banner.jpg'); /* Path to banner background image */
-            background-size: cover;
-            background-position: center;
-            font-family: 'Montserrat', sans-serif; /* Use Montserrat for consistency */
-            color: #ffffff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            background-image: 
+                linear-gradient(to bottom, rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), 
+                url("images/banner.jpg");
+            background-size: cover; 
+            background-attachment: fixed; 
+            overflow: auto; 
+            color: #ffffff; 
+            font-family: 'Montserrat', sans-serif; 
         }
 
-        /* Main Container */
-        .container {
-            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent for readability */
-            width: 90vw; /* Almost full width */
-            max-width: 1200px;
-            height: 90vh; /* Almost full height */
-            margin-top: 6em; /* Offset for the header */
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        #page-wrapper {
+            padding: 2em; 
         }
 
-        /* PDF Viewer styling */
-        .container embed {
-            width: 100%;
-            height: 100%;
-            border-radius: 5px;
-            border: none;
+        header {
+            position: fixed; 
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.8); 
+            z-index: 1000; 
+            padding: 1em; 
+        }
+
+        #header h1 {
+            margin: 0; 
+            color: #ffffff; 
+        }
+
+        .project {
+            margin: 2em 0; 
+            padding: 1em; 
+            background-color: rgba(255, 255, 255, 0.2); 
+            border-radius: 5px; 
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); 
+        }
+
+        .project h2 {
+            font-weight: bold;
+            color: #ffffff; 
+            margin: 0 0 0.3em 0;
+        }
+
+        .project h3 {
+            font-weight: 400;
+            color: #ffffff; 
+            margin: 0 0 0 0;
+        }
+
+        .collapsible {
+            background-color: transparent; /* Set background to transparent */
+            color: #ffffff; /* Text color */
+            cursor: pointer;
+            padding: 18px; /* Padding around the button text */
+            width: 100%; /* Full width */
+            border: none; /* Remove border */
+            text-align: left; /* Align text to the left */
+            outline: none; /* Remove outline */
+            font-size: 1em; /* Font size to match body text */
+            font-family: 'Montserrat', sans-serif; /* Use the same font as the rest of the page */
+            display: flex; /* Flex display for alignment */
+            align-items: center; /* Center vertically */
+            justify-content: flex-start; /* Align to the left */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s; /* Smooth background change */
+        }
+
+        .collapsible .arrow {
+            font-weight: bold;
+            margin-right: 10px; /* Positions arrow to the left of 'Abstract' */
+        }
+
+        .active, .collapsible:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Light transparent background on hover */
+        }
+
+        .contento {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: transparent; /* Makes background invisible */
+            font-size: 0.9em; /* Adjust this value as needed for smaller text */
+        }
+
+        .contento img {
+            width: 49%; 
+            height: auto;
+            margin-bottom: 1em;
+            border: 3px solid #6FA8DC; 
+            border-radius: 5px; /* Optional: Rounded corners, adjust or remove as needed */
+        }
+
+        a {
+            color: #ffa69e; 
+            text-decoration: none; 
+        }
+
+        a:hover {
+            text-decoration: underline; 
+        }
+
+        .image-container {
+            display: flex; /* Use flexbox for horizontal alignment */
+            justify-content: space-between; /* Space between the images */
+            margin-bottom: 1em; /* Add margin below the container */
+        }
+
+        .side-image {
+            width: 48%; /* Adjust width to fit two images side by side */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .side-image2 {
+            width: 32% !important; /* Adjust width to fit two images side by side */
+            height: auto; /* Maintain aspect ratio */
         }
     </style>
 </head>
