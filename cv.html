@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
     <title>CV- Nathan Shaw</title>
     <meta charset="utf-8" />
@@ -8,59 +8,57 @@
     <!-- Include Montserrat font from Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     
-    <!-- Your existing stylesheet -->
+    <!-- Link to main stylesheet -->
     <link rel="stylesheet" href="assets/css/main.css" />
     
-    <!-- Add the CSS to lock scrolling -->
+    <!-- Inline CSS for background and layout -->
     <style>
+        /* Lock scrolling */
         html, body {
             overflow: hidden;
         }
 
         /* Full-page background */
-body {
-    background-image: url('../images/banner.jpg'); /* Path to banner background image */
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color: #ffffff;
-}
+        body {
+            background-image: url('assets/images/banner.jpg'); /* Corrected path */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+        }
 
-/* Centered content container */
-.container {
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
-    padding: 2em;
-    border-radius: 8px;
-    text-align: center;
-    width: 80%;
-    max-width: 800px;
-}
+        /* Centered content container */
+        .container {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent for readability */
+            padding: 2em;
+            border-radius: 8px;
+            text-align: center;
+            width: 80%;
+            max-width: 800px;
+        }
 
-/* Heading style */
-.container h1 {
-    font-size: 2em;
-    margin-bottom: 1em;
-}
+        /* Heading style */
+        .container h1 {
+            font-size: 2em;
+            margin-bottom: 1em;
+        }
 
-/* PDF viewer styling */
-.pdf-viewer iframe {
-    width: 100%;
-    height: 80vh; /* Adjust height as needed */
-    border: none;
-    border-radius: 5px;
-}
-
-        
+        /* PDF viewer styling */
+        .pdf-viewer iframe {
+            width: 100%;
+            height: 80vh; /* Adjust height as needed */
+            border: none;
+            border-radius: 5px;
+        }
     </style>
     
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
-
 
 <body class="is-preload landing">
     <div id="page-wrapper">
@@ -86,13 +84,14 @@ body {
             </nav>
         </header>
 
-    <!-- Main Container -->
-    <div class="container">
-        <h1>Curriculum Vitae</h1>
-        
-        <!-- PDF Viewer -->
-        <div class="pdf-viewer">
-            <iframe src="Shaw_CV.pdf" frameborder="0" width="100%" height="600px"></iframe>
+        <!-- Main Container -->
+        <div class="container">
+            <h1>Curriculum Vitae</h1>
+            
+            <!-- PDF Viewer -->
+            <div class="pdf-viewer">
+                <iframe src="Shaw_CV.pdf" frameborder="0" width="100%" height="600px"></iframe>
+            </div>
         </div>
     </div>
 
