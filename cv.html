@@ -11,130 +11,38 @@
     <!-- Link to main stylesheet -->
     <link rel="stylesheet" href="assets/css/main.css" />
     
-    <!-- Inline CSS for background and layout -->
+    <!-- Inline CSS for responsive PDF display -->
     <style>
         html, body {
-            height: 100%; /* Ensure the html and body take up the full height */
-            margin: 0; /* Remove default margins */
-            overflow: hidden;
+            height: 100%;
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-image: linear-gradient(to bottom, rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), url("images/banner.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            color: #ffffff;
         }
 
-        body {
-            background-image: 
-                linear-gradient(to bottom, rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), 
-                url("images/banner.jpg");
-            background-size: cover; 
-            background-attachment: fixed; 
-            overflow: auto; 
-            color: #ffffff; 
-            font-family: 'Montserrat', sans-serif; 
+        .container {
+            padding: 2em;
         }
 
-        #page-wrapper {
-            padding: 2em; 
+        .pdf-viewer {
+            width: 100%;
+            height: 630vh;
+            border: none;
         }
 
-        header {
-            position: fixed; 
-            top: 0;
-            left: 0;
-            right: 0;
-            background: rgba(0, 0, 0, 0.8); 
-            z-index: 1000; 
-            padding: 1em; 
-        }
-
-        #header h1 {
-            margin: 0; 
-            color: #ffffff; 
-        }
-
-        .project {
-            margin: 2em 0; 
-            padding: 1em; 
-            background-color: rgba(255, 255, 255, 0.2); 
-            border-radius: 5px; 
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); 
-        }
-
-        .project h2 {
-            font-weight: bold;
-            color: #ffffff; 
-            margin: 0 0 0.3em 0;
-        }
-
-        .project h3 {
-            font-weight: 400;
-            color: #ffffff; 
-            margin: 0 0 0 0;
-        }
-
-        .collapsible {
-            background-color: transparent; /* Set background to transparent */
-            color: #ffffff; /* Text color */
-            cursor: pointer;
-            padding: 18px; /* Padding around the button text */
-            width: 100%; /* Full width */
-            border: none; /* Remove border */
-            text-align: left; /* Align text to the left */
-            outline: none; /* Remove outline */
-            font-size: 1em; /* Font size to match body text */
-            font-family: 'Montserrat', sans-serif; /* Use the same font as the rest of the page */
-            display: flex; /* Flex display for alignment */
-            align-items: center; /* Center vertically */
-            justify-content: flex-start; /* Align to the left */
-            border-radius: 5px; /* Rounded corners */
-            transition: background-color 0.3s; /* Smooth background change */
-        }
-
-        .collapsible .arrow {
-            font-weight: bold;
-            margin-right: 10px; /* Positions arrow to the left of 'Abstract' */
-        }
-
-        .active, .collapsible:hover {
-            background-color: rgba(255, 255, 255, 0.2); /* Light transparent background on hover */
-        }
-
-        .contento {
-            padding: 0 18px;
+        .download-link {
             display: none;
-            overflow: hidden;
-            background-color: transparent; /* Makes background invisible */
-            font-size: 0.9em; /* Adjust this value as needed for smaller text */
+            text-align: center;
+            margin-top: 20px;
         }
 
-        .contento img {
-            width: 49%; 
-            height: auto;
-            margin-bottom: 1em;
-            border: 3px solid #6FA8DC; 
-            border-radius: 5px; /* Optional: Rounded corners, adjust or remove as needed */
-        }
-
-        a {
-            color: #ffa69e; 
-            text-decoration: none; 
-        }
-
-        a:hover {
-            text-decoration: underline; 
-        }
-
-        .image-container {
-            display: flex; /* Use flexbox for horizontal alignment */
-            justify-content: space-between; /* Space between the images */
-            margin-bottom: 1em; /* Add margin below the container */
-        }
-
-        .side-image {
-            width: 48%; /* Adjust width to fit two images side by side */
-            height: auto; /* Maintain aspect ratio */
-        }
-
-        .side-image2 {
-            width: 32% !important; /* Adjust width to fit two images side by side */
-            height: auto; /* Maintain aspect ratio */
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .pdf-viewer { display: none; }
+            .download-link { display: block; }
         }
     </style>
 </head>
@@ -165,9 +73,12 @@
         
         <!-- Main Content -->
         <div class="container">
-            <!-- PDF Viewer or Content goes here -->
-            <embed src="Shaw_CV.pdf" type="application/pdf" width="100%" height="610vh" style="margin-top: 5vh;" />
-        </div>
+        <!-- PDF Viewer for Desktop -->
+        <iframe class="pdf-viewer" src="Shaw_CV.pdf"></iframe>
+
+        <!-- Download link for Mobile -->
+        <p class="download-link">If the PDF viewer doesn’t display, <a href="Shaw_CV.pdf" download>click here to download the CV.</a></p>
+    </div>
 
     </div>
 
