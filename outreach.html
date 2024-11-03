@@ -34,26 +34,10 @@
             padding: 2em;
         }
 
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            background: rgba(0, 0, 0, 0.8);
-            z-index: 1000;
-            padding: 1em;
-        }
-
-        #header h1 {
-            margin: 0;
-            color: #ffffff;
-        }
-
         .project-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 1.5em;
-            margin-top: 2em;
         }
 
         .project {
@@ -79,45 +63,52 @@
             text-align: left;
             outline: none;
             font-size: 1em;
+            font-family: 'Montserrat', sans-serif;
             display: flex;
             align-items: center;
+            justify-content: flex-start;
             border-radius: 5px;
             transition: background-color 0.3s;
         }
 
-        .collapsible .arrow {
-            font-weight: bold;
-            margin-right: 10px;
-        }
-
-        .active, .collapsible:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-        }
-
-        .contento {
-            padding: 0 18px;
+        /* Modal styles */
+        .modal {
             display: none;
-            overflow: hidden;
-            background-color: transparent;
-            font-size: 0.9em;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
         }
 
-        .image-row {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 6em;
-            margin-bottom: 1em;
-        }
-
-        .image-row img {
-            width: 32%;
-            border: 3px solid #6FA8DC;
+        .modal-content {
+            background-color: #333;
+            color: #ffffff;
+            padding: 20px;
             border-radius: 5px;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+            text-align: left;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 1.5em;
+            cursor: pointer;
+            color: #ffffff;
         }
     </style>
-
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
+
 
 <body class="is-preload landing">
     <div id="page-wrapper">
@@ -143,7 +134,7 @@
         </header>
 
         <!-- Top Row of Images -->
-        <div class="image-row">
+        <div class="image-row" style="margin-top: 6em;">
             <img src="images/outreach1.jpg" alt="Outreach Image 1" />
             <img src="images/outreach2.jpg" alt="Outreach Image 2" />
             <img src="images/outreach3.jpg" alt="Outreach Image 3" />
@@ -155,72 +146,74 @@
                 <!-- Project 1 -->
                 <div class="project">
                     <h2>Public Stargazing Events</h2>
-                    <button type="button" class="collapsible">
-                        <span class="arrow">▼</span><strong>Abstract</strong>
-                    </button>
-                    <div class="contento">
-                        <p>Description of stargazing events, public engagement, and astronomical education.</p>
+                    <button type="button" class="collapsible" onclick="openModal('modal1')">Abstract</button>
+                    <div id="modal1" class="modal">
+                        <div class="modal-content">
+                            <span class="modal-close" onclick="closeModal('modal1')">&times;</span>
+                            <p>Description of stargazing events, public engagement, and astronomical education.</p>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Project 2 -->
                 <div class="project">
                     <h2>Planetarium Shows</h2>
-                    <button type="button" class="collapsible">
-                        <span class="arrow">▼</span><strong>Abstract</strong>
-                    </button>
-                    <div class="contento">
-                        <p>Explanation of the planetarium shows, topics covered, and impact on community education.</p>
+                    <button type="button" class="collapsible" onclick="openModal('modal2')">Abstract</button>
+                    <div id="modal2" class="modal">
+                        <div class="modal-content">
+                            <span class="modal-close" onclick="closeModal('modal2')">&times;</span>
+                            <p>Explanation of the planetarium shows, topics covered, and impact on community education.</p>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Project 3 -->
                 <div class="project">
                     <h2>School Outreach Program</h2>
-                    <button type="button" class="collapsible">
-                        <span class="arrow">▼</span><strong>Abstract</strong>
-                    </button>
-                    <div class="contento">
-                        <p>Details on school visits, interactive workshops, and hands-on activities for students.</p>
+                    <button type="button" class="collapsible" onclick="openModal('modal3')">Abstract</button>
+                    <div id="modal3" class="modal">
+                        <div class="modal-content">
+                            <span class="modal-close" onclick="closeModal('modal3')">&times;</span>
+                            <p>Details on school visits, interactive workshops, and hands-on activities for students.</p>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Project 4 -->
                 <div class="project">
                     <h2>Astronomy Talks and Lectures</h2>
-                    <button type="button" class="collapsible">
-                        <span class="arrow">▼</span><strong>Abstract</strong>
-                    </button>
-                    <div class="contento">
-                        <p>Summary of lectures, topics discussed, and engagement strategies with the public.</p>
+                    <button type="button" class="collapsible" onclick="openModal('modal4')">Abstract</button>
+                    <div id="modal4" class="modal">
+                        <div class="modal-content">
+                            <span class="modal-close" onclick="closeModal('modal4')">&times;</span>
+                            <p>Summary of lectures, topics discussed, and engagement strategies with the public.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </div>
 
-    <!-- Scripts for dropdown functionality -->
+    <!-- Scripts for modal functionality -->
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const coll = document.querySelectorAll(".collapsible");
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'flex';
+        }
 
-            coll.forEach(button => {
-                button.addEventListener("click", function () {
-                    this.classList.toggle("active");
-                    
-                    const content = this.nextElementSibling;
-                    if (content.style.display === "block") {
-                        content.style.display = "none";
-                        this.querySelector(".arrow").textContent = "▼";
-                    } else {
-                        content.style.display = "block";
-                        this.querySelector(".arrow").textContent = "▲";
-                    }
-                });
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+
+        // Close the modal when clicking outside of the modal content
+        window.onclick = function(event) {
+            const modals = document.querySelectorAll('.modal');
+            modals.forEach(modal => {
+                if (event.target == modal) {
+                    modal.style.display = 'none';
+                }
             });
-        });
+        }
     </script>
-
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
     <script src="assets/js/jquery.dropotron.min.js"></script>
