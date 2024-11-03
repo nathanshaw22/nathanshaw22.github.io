@@ -106,6 +106,22 @@
     object-fit: cover; /* Ensures images don't stretch */
 }
 
+    .image-row2 {
+    display: flex;
+    justify-content: center; /* Centers the images horizontally */
+    gap: 1em; /* Space between images */
+    margin-bottom: 1.5em; /* Adds some margin below the row */
+}
+
+.image-row2 img {
+    width: 40%; /* Adjusts size for a larger display, can be customized */
+    max-width: 500px; /* Limits maximum size for large screens */
+    height: auto; /* Maintains the aspect ratio */
+    border: 3px solid #6FA8DC; /* Border styling */
+    border-radius: 5px; /* Optional rounded corners */
+}
+
+
     </style>
 
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -184,7 +200,7 @@
     </button>
     <div class="contento">
         <p>In preparation for the 2024 Total Solar Eclipse, I spent the six weeks leading up to the event tabling around campus and throughout Kirksville to raise awareness and sell affordable eclipse glasses, with proceeds supporting the Truman State Astronomy Department. At these events, we set up solar telescopes, allowing the public to observe sunspots and engage in hands-on learning about the Sun. I also participated in a local interview on KTVO in Kirksville, where I discussed what to expect during the eclipse, emphasized safe viewing practices, and shared tips on using eclipse glasses to protect eyesight.</p>                
-        <div class="image-row">
+        <div class="image-row2">
             <img src="images/OP1.jpg" alt="Eclipse Outreach Image 1" class="side-image" />
             <img src="images/OP2.jpg" alt="Eclipse Outreach Image 2" class="side-image" />
             <img src="images/OP3.jpg" alt="Eclipse Outreach Image 3" class="side-image" />
