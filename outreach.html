@@ -33,6 +33,10 @@
             padding: 2em;
         }
 
+        header h1 {
+            margin-left: 0 !important;
+        }
+        
         .project {
             margin-bottom: 1.5em;
             padding: 1em;
@@ -78,16 +82,20 @@
         }
 
         .image-row {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 1em;
-        }
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    align-items: flex-start; /* Align images at the top to keep consistency */
+}
 
-        .image-row img {
-            width: 32%;
-            border: 3px solid #6FA8DC;
-            border-radius: 5px;
-        }
+.image-row img {
+    height: 200px; /* Set a consistent height */
+    width: auto; /* Keep the width proportional to the original aspect ratio */
+    border: 3px solid #6FA8DC;
+    border-radius: 5px;
+    object-fit: cover; /* Ensures images don't stretch */
+}
+
     </style>
 
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -117,7 +125,7 @@
         </header>
 
         <!-- Top Row of Images -->
-        <div class="image-row" style="margin-top: 6em;">
+        <div class="image-row" style="margin-top: 3em;">
             <img src="images/TESS1.png" alt="Outreach Image 1" />
             <img src="images/TESS2.png" alt="Outreach Image 2" />
             <img src="images/TESS3.png" alt="Outreach Image 3" />
