@@ -122,26 +122,21 @@
 }
 
 .image-container2 {
-    display: flex;
-    justify-content: center; /* Centers images horizontally */
-    align-items: center; /* Centers images vertically */
-    flex-wrap: wrap; /* Allows images to wrap if necessary */
-    max-width: 80%; /* Adjust this width as needed */
-    margin: 0 auto; /* Centers the container itself */
-    gap: 20px; /* Consistent spacing between images */
-}
-
-.image-container2 .image {
-    display: flex; /* Ensures images are flex items */
-    justify-content: center; /* Centers images within their container */
-    align-items: center; /* Vertically centers images within their container */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row; /* Align images in a row */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    justify-content: space-between; /* Space between images */
+    margin-top: 3em; /* Adjust top margin as needed */
+    margin-bottom: 1.5em; /* Margin below the container */
 }
 
 .image-container2 img {
-    max-width: 100%; /* Prevents images from overflowing */
-    height: auto; /* Maintains aspect ratio */
+    width: 48%; /* Adjust width to fit within the container */
+    height: auto; /* Maintain aspect ratio */
+    border: 3px solid #6FA8DC; /* Optional border */
+    border-radius: 5px; /* Optional rounded corners */
 }
-
 
         
     </style>
