@@ -91,19 +91,19 @@
             margin-top: 0.5em;
         }
 
-        .image-row {
+    .image-row {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 1em;
-    align-items: flex-start; /* Align images at the top to keep consistency */
+    justify-content: center; /* Centers the images horizontally */
+    gap: 1em; /* Space between images */
+    margin-bottom: 1.5em; /* Adds some margin below the row */
 }
 
 .image-row img {
-    height: 200px; /* Set a consistent height */
-    width: auto; /* Keep the width proportional to the original aspect ratio */
-    border: 3px solid #6FA8DC;
-    border-radius: 5px;
-    object-fit: cover; /* Ensures images don't stretch */
+    width: 20%; /* Adjusts size for a larger display, can be customized */
+    max-width: 500px; /* Limits maximum size for large screens */
+    height: auto; /* Maintains the aspect ratio */
+    border: 3px solid #6FA8DC; /* Border styling */
+    border-radius: 5px; /* Optional rounded corners */
 }
 
     .image-row2 {
@@ -168,7 +168,7 @@
         </header>
 
         <!-- Top Row of Images -->
-        <div class="image-row2" style="margin-top: 3em;">
+        <div class="image-row" style="margin-top: 3em;">
             <img src="images/Pic1.jpg" alt="Outreach Image 1" />
             <img src="images/Pic2.JPG" alt="Outreach Image 2" />
             <img src="images/Pic3.jpg" alt="Outreach Image 3" />
