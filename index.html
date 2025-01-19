@@ -50,19 +50,22 @@ html, body {
 
     .image-containerr {
     display: flex;
-    justify-content: center; /* Centers images horizontally */
-    align-items: center; /* Centers images vertically */
-    flex-wrap: wrap; /* Allows images to wrap onto the next row */
-    gap: 20px; /* Spacing between images */
-    width: 100%; /* Occupies the full width of the screen */
-    padding: 0; /* No padding */
-    margin-top: 0; /* No extra space above the container */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    padding: 0;
+    margin-top: 0;
+    height: auto; /* Allows the container to scale with content */
 }
 
 .image-containerr .imagee {
-    flex: 1 1 calc(32% - 20px); /* Makes each image take 20% of the row width minus spacing */
-    max-width: calc(32% - 20px); /* Prevents images from exceeding 20% width */
-    box-sizing: border-box; /* Includes padding and border in the width/height */
+    flex: 1 1 calc(32% - 20px);
+    max-width: calc(32% - 20px);
+    box-sizing: border-box;
+    height: auto; /* Allow images to scale dynamically */
+    aspect-ratio: 4 / 3; /* Optional: Ensures consistent aspect ratio */
 }
 
 .imagee img {
