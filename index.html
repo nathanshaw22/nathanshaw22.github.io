@@ -29,56 +29,47 @@ html, body {
     height: 95vh; /* Use 95% of the viewport height */
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
-    overflow-x: hidden; /* Ensure no overflow */
+    justify-content: space-between; /* Space between images and text */
+    align-items: center;
+    overflow: hidden; /* Prevent overflow */
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 
-.content {
-    width: 100%; /* Full width of the container */
-    height: auto; /* Maintain aspect ratio of child content */
-}
-
-.bottom-text {
-    margin: 0 auto; /* Center-align text at the bottom */
-    text-align: center;
-}
-
-
-
-        
-
-    .image-containerr {
+.image-containerr {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px; /* Adjust gap between images */
     width: 100%;
-    padding: 0;
-    margin-top: 0;
-    height: auto; /* Allows the container to scale with content */
+    height: auto; /* Let it adjust based on content */
 }
 
 .image-containerr .imagee {
-    flex: 1 1 calc(32% - 20px);
-    max-width: calc(32% - 20px);
-    max-height: 90vh;
+    flex: 1 1 calc(30% - 10px); /* Make images responsive */
+    max-width: calc(30% - 10px);
+    aspect-ratio: 4 / 3; /* Maintain aspect ratio */
+    height: calc(50vh - 40px); /* Adjust height relative to viewport */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     box-sizing: border-box;
-    height: auto; /* Allow images to scale dynamically */
-    aspect-ratio: 4 / 3; /* Optional: Ensures consistent aspect ratio */
 }
 
 .imagee img {
-    width: 100%; /* Ensures images fill their container width */
-    height: auto; /* Maintains the aspect ratio */
-    border-radius: 5px; /* Rounds image corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
-    border: 3px solid #6FA8DC; 
-    border-radius: 5px; /* Optional: Rounded corners, adjust or remove as needed */
+    width: 100%; /* Scale images dynamically */
+    height: 100%; /* Fill the available height */
+    object-fit: cover; /* Ensure image content is well-aligned */
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 3px solid #6FA8DC;
 }
 
-
+.bottom-text {
+    text-align: center;
+    margin: 10px 0; /* Add space above and below the text */
+}
 
     </style>
     
@@ -94,8 +85,6 @@ html, body {
   gtag('config', 'G-6X41PHFCEC');
 </script>
 
-
-    
 </head>
 
 
@@ -123,27 +112,27 @@ html, body {
         </header>
 
         <!-- Banner -->
-        <section id="banner" style="height: 95vh;">
+        <section id="banner">
             <div class="content">
-                <div class="image-containerr" style="margin-top: -25px">
+                <!-- Images -->
+                <div class="image-containerr">
                     <div class="imagee"><img src="images/thumbnail_IMG_2734.jpg" alt="Image 1" /></div>
                     <div class="imagee"><img src="images/GBT.jpg" alt="Image 2" /></div>
                     <div class="imagee"><img src="images/IMG_0374_Original.jpg" alt="Image 3" /></div>
                 </div>
-                <!-- Place text at the bottom of the banner -->
-                <div class="bottom-text" style="margin-top: 20px;">
+                <!-- Bottom Text -->
+                <div class="bottom-text">
                     <h3><b>Nathan Shaw – Truman State University – BS in Physics (Astrophysics Concentration)</b></h3>
                 </div>
-                <div class="bottom-text" style="margin-top: 10px;">
-<h3>
-  <b>
-    <span style="color: gold; font-weight: 900; text-shadow: 1px 1px 2px black;">
-      AAS 245 Undergraduate Chambliss Award Winner
-    </span>
-  – <a href="mailto:ncs6387@truman.edu">ncs6387@truman.edu</a>
-</b>
-</h3>
-
+                <div class="bottom-text">
+                    <h3>
+                        <b>
+                            <span style="color: gold; font-weight: 900; text-shadow: 1px 1px 2px black;">
+                                AAS 245 Undergraduate Chambliss Award Winner
+                            </span>
+                            – <a href="mailto:ncs6387@truman.edu">ncs6387@truman.edu</a>
+                        </b>
+                    </h3>
                 </div>
             </div>
 
