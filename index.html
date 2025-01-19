@@ -14,59 +14,56 @@
     <link rel="icon" href="images/Logo2.ico" type="image/x-icon">
 
     <!-- Add the CSS to improve responsiveness -->
-    <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-        }
-        
-        body {
-            background-image: 
-                linear-gradient(to bottom, rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), 
-                url("images/banner.jpg");
-            background-size: cover;
-            background-attachment: fixed;
-            color: #ffffff;
-            font-family: 'Montserrat', sans-serif;
-        }
+   <style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    
+    body {
+        background: linear-gradient(to bottom, rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)),
+                    url("images/banner.jpg") center center / cover no-repeat fixed;
+        color: #ffffff;
+        font-family: 'Montserrat', sans-serif;
+    }
 
-        
-        #banner {
-            display: flex; /* Enable Flexbox */
-            flex-direction: column; /* Stack elements vertically */
-            align-items: center; /* Center horizontally */
-            justify-content: center; /* Center vertically */
-            height: 100vh; /* Fill the full viewport height */
-            text-align: center; /* Center-align text */
-            box-sizing: border-box; /* Include padding in height/width calculations */
-        }
+    #banner {
+        display: flex; /* Enable Flexbox */
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center horizontally */
+        justify-content: center; /* Center vertically */
+        height: 100vh; /* Fill the full viewport height */
+        text-align: center; /* Center-align text */
+        box-sizing: border-box; /* Include padding in height/width calculations */
+    }
 
-        .content {
-            width: 90%; /* Allow some margin for smaller screens */
-            max-width: 1200px; /* Prevent content from stretching too much */
-        }
+    .content {
+        width: 90%; /* Allow some margin for smaller screens */
+        max-width: 1200px; /* Prevent content from stretching too much */
+    }
 
-        .image-containerr {
-            display: flex;
-            justify-content: space-between; /* Distribute images evenly */
-            flex-wrap: wrap; /* Wrap images to the next row on smaller screens */
-            gap: 20px; /* Add spacing between images */
-        }
+    .image-containerr {
+        display: flex;
+        justify-content: space-between; /* Distribute images evenly */
+        flex-wrap: wrap; /* Wrap images to the next row on smaller screens */
+        gap: 20px; /* Add spacing between images */
+    }
 
-        .image img {
-            max-width: 100%; /* Ensure images resize properly */
-            height: auto;
-            border-radius: 5px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+    .image img {
+        max-width: 100%; /* Ensure images resize properly */
+        height: auto;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
 
-        .bottom-text {
-            margin-top: 20px;
-            word-wrap: break-word; /* Ensure long text doesn't overflow */
-        }
-    </style>
+    .bottom-text {
+        margin-top: 20px;
+        word-wrap: break-word; /* Ensure long text doesn't overflow */
+    }
+</style>
+
 
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
