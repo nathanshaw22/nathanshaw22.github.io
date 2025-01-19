@@ -22,15 +22,13 @@
         }
 
         body {
-            background-image: 
+background-image: 
                 linear-gradient(to bottom, rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), 
-                url("images/banner.jpg");
-            background-size: cover; 
-            background-attachment: fixed; 
-            overflow: auto; 
-            color: #ffffff; 
-            font-family: 'Montserrat', sans-serif; 
-        }
+                url("images/banner.jpg");  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Makes the image stay static while scrolling */
+}
 
         
         #banner {
