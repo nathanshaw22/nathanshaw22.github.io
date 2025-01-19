@@ -3450,7 +3450,6 @@ body.landing #header {
     position: fixed; /* Makes the pseudo-element fixed relative to the viewport */
     top: 0;
     width: 100%;
-    z-index: 20; /* Ensures it sits behind the content but above other elements */
     pointer-events: none; /* Prevents interactions with the pseudo-element */
 }
 
