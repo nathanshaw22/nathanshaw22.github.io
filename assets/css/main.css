@@ -3440,6 +3440,7 @@ body.landing #header {
 
 		#banner:after {
 			background-image: linear-gradient(to bottom, rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), url("images/overlay.png");
+			background-attachment: fixed;
 			content: '';
 			display: block;
 			height: 100%;
