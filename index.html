@@ -15,10 +15,38 @@
     
     <!-- Add the CSS to lock scrolling -->
     <style>
-        html, body {
-            overflow-x: hidden;
-        }
 
+html, body {
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Prevent scrolling */
+    box-sizing: border-box; /* Ensure consistent sizing */
+}
+
+#banner {
+    height: 95vh; /* Use 95% of the viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    overflow: hidden; /* Ensure no overflow */
+}
+
+.content {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio of child content */
+}
+
+.bottom-text {
+    margin: 0 auto; /* Center-align text at the bottom */
+    text-align: center;
+}
+
+
+
+        
 
     .image-containerr {
     display: flex;
@@ -42,6 +70,8 @@
     height: auto; /* Maintains the aspect ratio */
     border-radius: 5px; /* Rounds image corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
+    border: 3px solid #6FA8DC; 
+    border-radius: 5px; /* Optional: Rounded corners, adjust or remove as needed */
 }
 
 
