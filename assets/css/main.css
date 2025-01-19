@@ -3390,7 +3390,7 @@ input, select, textarea {
 
 /* Navigation Styles */
 #header nav {
-    margin-right: 2em; /* Adjust margin if needed */
+    margin-right: 1em; /* Adjust margin if needed */
 }
 
 #header nav ul {
