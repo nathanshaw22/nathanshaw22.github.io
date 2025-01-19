@@ -3439,16 +3439,21 @@ body.landing #header {
 		}
 
 		#banner:after {
-			background-image: linear-gradient(to bottom, rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), url("images/overlay.png");
-			background-attachment: fixed;
-			content: '';
-			display: block;
-			height: 100%;
-			left: 0;
-			position: absolute;
-			top: 0;
-			width: 100%;
-		}
+    background-image: linear-gradient(to bottom, rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), url("images/overlay.png");
+    background-attachment: fixed; /* Keeps the background fixed in place */
+    background-size: cover; /* Ensures the background covers the entire element */
+    background-position: center center; /* Centers the background */
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: fixed; /* Makes the pseudo-element fixed relative to the viewport */
+    top: 0;
+    width: 100%;
+    z-index: 20; /* Ensures it sits behind the content but above other elements */
+    pointer-events: none; /* Prevents interactions with the pseudo-element */
+}
+
 
 		#banner .content {
 			display: inline-block;
