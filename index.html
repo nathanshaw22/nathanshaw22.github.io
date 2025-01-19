@@ -26,24 +26,21 @@
     align-items: center; /* Centers images vertically */
     flex-wrap: wrap; /* Allows images to wrap onto the next row */
     gap: 20px; /* Spacing between images */
-    width: 100%; /* Full width of the viewport */
-    height: 100vh; /* Full height of the viewport */
+    width: 100%; /* Occupies the full width of the screen */
     padding: 0; /* No padding */
-    margin: 0; /* No extra space */
-    box-sizing: border-box; /* Includes padding and border in dimensions */
+    margin-top: 0; /* No extra space above the container */
 }
 
-.image-containerr .imagee {
-    flex: 1 1 calc(20% - 20px); /* Dynamically adjusts image width */
-    max-width: calc(20% - 20px); /* Prevents images from exceeding 20% width */
-    height: auto; /* Maintains aspect ratio */
-    box-sizing: border-box; /* Includes padding and border in dimensions */
+.image-containerr .image {
+    flex: 1 1 calc(30% - 20px); /* Makes each image take 20% of the row width minus spacing */
+    max-width: calc(30% - 20px); /* Prevents images from exceeding 20% width */
+    box-sizing: border-box; /* Includes padding and border in the width/height */
 }
 
-.imagee img {
-    width: 100%; /* Fill the parent container's width */
-    height: auto; /* Maintain the aspect ratio */
-    border-radius: 5px; /* Rounded corners for images */
+.image img {
+    width: 100%; /* Ensures images fill their container width */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 5px; /* Rounds image corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
 }
 
